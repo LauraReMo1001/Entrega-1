@@ -3,12 +3,87 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+  --color-primario: #eead4a;
+  --color-fondo: #fff4f8;
+  --color-texto: #071f3e;
+  --fuente-base: "Abril Fatface", serif;;
+}
+body {
+  font-family: var(--fuente-base);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
 header {
   padding: 40px 0;
   text-align: center;
+  font-size: 30px;
 }
 nav ul {
   display: flex;
   gap: 50px;
   justify-content: center;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 80px;
+}
+.hero div {
+  max-width: 500px;
+}
+.hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+.hero button {
+  margin-top: 20px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: none;
+  background-color:#f47729;
+  font-weight: bold; 
+  cursor: pointer;
+}
+.recomendaciones {
+  padding: 60px 80px;
+}
+.recomendaciones h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.recomendaciones article {
+  text-align: center;
+}
+.recomendaciones article img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto 16px;
+  border-radius: 6px;
+}
+.recomendaciones h3 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+.portadasrec {
+    display: flex;
+    gap: 60;
+    justify-content: space-evenly;
 }
