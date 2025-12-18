@@ -7,7 +7,7 @@
   --color-primario: #eead4a;
   --color-fondo: #fff4f8;
   --color-texto: #071f3e;
-  --fuente-base: "Abril Fatface", serif;;
+  --fuente-base: "Abril Fatface", serif;
 }
 body {
   font-family: var(--fuente-base);
@@ -29,10 +29,27 @@ img {
 
 
 header {
+  background-color:#071f3e;
+  color: #fff4f8;
+  font-size: 3.5rem;
+  letter-spacing: 2px;  
   padding: 40px 0;
   text-align: center;
   font-size: 30px;
 }
+header h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: ;
+  letter-spacing: 2px;
+}
+header p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 12px;
+  opacity: 0.85;
+}
+
 nav ul {
   display: flex;
   gap: 50px;
