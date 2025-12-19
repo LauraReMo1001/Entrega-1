@@ -167,3 +167,14 @@ nav a:hover {
     font-size: 20px;
     letter-spacing: 1.5px;
 }
+.cta-recs button {
+    margin-top: 20px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: none;
+  background-color:#f47729;
+  color: #fff4f8;
+  font-weight: bold; 
+  cursor: pointer;
+
+}
