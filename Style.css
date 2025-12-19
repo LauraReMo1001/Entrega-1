@@ -5,8 +5,8 @@
 }
 :root {
   --color-primario: #eead4a;
-  --color-fondo: #fff4f8;
-  --color-texto: #071f3e;
+  --color-fondo: #071f3e;;
+  --color-texto: #fff4f8;
   --fuente-base: "Abril Fatface", serif;
 }
 body {
@@ -76,17 +76,43 @@ nav a:hover {
   transition: 0.2s;
 }
 .hero {
+  background-image: url(/Images/pexels-234741447-12432817.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  padding: 150px 80px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  padding: 60px 80px;
+  align-items: center;
+  position: relative;
 }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5); 
+}
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
 .hero div {
   max-width: 500px;
 }
 .hero h2 {
   font-size: 2.4rem;
   margin-bottom: 16px;
+}
+.hero p {
+    background-color: #fff4f8;
+    opacity: 0.5;
+    font-family: 'Raleway', sans-serif;
+    color: #071f3e;
+    padding: 8px;  
 }
 .hero button {
   margin-top: 20px;
@@ -100,8 +126,14 @@ nav a:hover {
 .recomendaciones {
   padding: 60px 80px;
 }
+.Recomendaciones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
 .recomendaciones h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -123,4 +155,8 @@ nav a:hover {
     display: flex;
     gap: 60;
     justify-content: space-evenly;
+}
+
+ .recomendaciones p {
+    font-family:'Raleway', sans-serif;
 }
