@@ -176,5 +176,18 @@ nav a:hover {
   color: #fff4f8;
   font-weight: bold; 
   cursor: pointer;
+}
+footer {
+  background-color: #071f3e;
+  color: #fff4f8;
+  text-align: center;
+  padding: 20px 40px;
+  font-size: 0.9rem;
+  margin-top: 60px;
+  border-top: 2px solid #f47729;
+}
 
+footer p {
+  opacity: 0.7;
+  margin: 4px 0;
 }
