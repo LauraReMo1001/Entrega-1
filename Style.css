@@ -112,6 +112,7 @@ nav a:hover {
     opacity: 0.5;
     font-family: 'Raleway', sans-serif;
     color: #071f3e;
+    font-weight: bolder;
     padding: 8px;  
 }
 .hero button {
